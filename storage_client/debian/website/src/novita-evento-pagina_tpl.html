@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="it">
+
+@@include('./includes/head.html')
+
+<body>
+
+  @@include('./includes/cookies.html')
+
+  @@include('./includes/header.html')
+
+    <main id="main-container" class="main-container greendark">
+
+      <section class="section py-2 bg-white d-none d-sm-block">
+        <div class="container">
+          <div class="row variable-gutters">
+            <div class="col-12">
+              <div class="breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumbs-list" data-element="breadcrumb">
+                    <li class="breadcrumb-item"><a href="home.html" title="Vai alla pagina: Home">Home</a></li>
+                    <li class="breadcrumb-item"><a href="sezione-notizie.html" title="Vai alla pagina: Novità">Novità</a></li>
+                    <li class="breadcrumb-item"><a href="archivio-eventi.html" title="Vai alla pagina: Calendario Eventi">Calendario eventi</a></li>
+                    <li class="breadcrumb-item"><a href="archivio-eventi.html" title="Vai alla pagina: Eventi">Eventi</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><span>{{evento_titolo}}</span></li>
+                  </ol>
+                </nav>
+              </div><!-- /breadcrumbs -->
+            </div><!-- /col-12 -->
+          </div><!-- /row -->
+        </div><!-- /container -->
+      </section><!-- /section -->
+
+
+      <section class="section bg-white article-title">
+        <div class="title-img" style="background-image: url('assets/placeholders/placeholder-1280x960.jpg');"></div>
+        <div class="container">
+          <div class="row variable-gutters">
+            <div class="col-md-6 d-flex align-items-center">
+              <div class="title-content">
+                <h1 class="h2">{{evento_titolo}}</h1>
+                <div class="h3 text-greendark mb-3">dal {{evento_data_inizio}} al {{evento_data_inizio}}</div>
+                <p class="mb-0">{{evento_oggetto}}</p>
+                <aside class="badges-wrapper badges-main mt-4">
+                  <div class="h4">Argomenti</div>
+                  <div class="badges">
+                    <a href="#" data-element="topic-list"
+                      class="badge badge-sm badge-pill badge-outline-greendark">{{evento_argomento1}}</a>
+                    <a href="#" data-element="topic-list"
+                      class="badge badge-sm badge-pill badge-outline-greendark">{{evento_argomento2}}</a>
+                    <a href="#" data-element="topic-list"
+                      class="badge badge-sm badge-pill badge-outline-greendark">{{evento_argomento3}}</a>
+                    <a href="#" data-element="topic-list"
+                      class="badge badge-sm badge-pill badge-outline-greendark">{{evento_argomento4}}</a>
+                    
+                  </div><!-- /badges -->
+                </aside><!-- /badges-wrapper -->
+
+                <div class="text-icon">
+                  <a href="#">
+                    <svg class="icon svg-link">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-link"></use>
+                    </svg>
+                    <p>{{evento_oggetto}}</p>
+                  </a>
+                </div>
+              </div><!-- /title-content -->
+            </div><!-- /col-md-6 -->
+          </div><!-- /row -->
+        </div><!-- /container -->
+      </section>
+
+      <section class="section bg-white">
+        <div class="container container-border-top">
+          <div class="row variable-gutters">
+            <div class="col-lg-3 aside-border px-0">
+              <aside class="aside-main aside-sticky">
+                <div class="aside-title" id="event-legend">
+                  <a class="toggle-link-list" data-toggle="collapse" href="#lista-paragrafi" role="button"
+                    aria-expanded="true" aria-controls="lista-paragrafi" aria-label="apri / chiudi indice dell'evento">
+                    <span>Indice dell'evento</span>
+                    <svg class="icon icon-toggle svg-arrow-down-small">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-arrow-down-small"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div id="lista-paragrafi" class="link-list-wrapper collapse show" role="region"
+                  aria-labelledby="event-legend">
+                  <ul class="link-list">
+                    <li>
+                      <a class="list-item scroll-anchor-offset" href="#art-par-01">Cos'è</a>
+                    </li>
+                    <li>
+                      <a class="list-item scroll-anchor-offset" href="#art-par-02">Luogo</a>
+                    </li>
+                    <li>
+                      <a class="list-item scroll-anchor-offset" href="#art-par-03">Date e orari</a> 
+                    </li> 
+                    <!--<li>
+                      <a class="list-item scroll-anchor-offset" href="#art-par-04">Costi</a>
+                    </li>-->
+                    <li>
+                      <a class="list-item scroll-anchor-offset" href="#art-par-05">Contatti</a>
+                    </li>
+                    <li>
+                      <a class="list-item scroll-anchor-offset" href="#art-par-06">Ulteriori informazioni</a>
+                    </li>
+                  </ul>
+                </div>
+              </aside>
+            </div>
+            <div class="col-lg-6">
+              <article class="article-wrapper pt-4 px-3">
+                <h2 class="h4" id="art-par-01">Cos'è</h2>
+                <div class="col-lg-12 px-0 wysiwig-text">
+                  <p>{{evento_testo}}</p>
+                </div>
+                <!--
+                <div class="row variable-gutters">
+                  <div class="col">
+                    <div class="it-carousel-wrapper inside-carousel splide" data-bs-carousel-splide>
+                      <div class="splide__track">
+                        <ul class="splide__list">
+                          <li class="splide__slide">
+                            <div class="it-single-slide-wrapper gallery-item">
+                              <a href="#" aria-label="visualizza foto: didascalia della foto">
+                                <figure>
+                                  <img src="assets/placeholders/placeholder-1000x665.jpg" alt="Descrizione immagine">
+                                  <figcaption>Foto: didascalia della foto</figcaption>
+                                </figure>
+                              </a>
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                            <div class="it-single-slide-wrapper gallery-item">
+                              <a href="#" aria-label="visualizza foto">
+                                <figure>
+                                  <img src="assets/placeholders/placeholder-1000x665.jpg" alt="Descrizione immagine">
+                                </figure>
+                              </a>
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                            <div class="it-single-slide-wrapper gallery-item">
+                              <a href="#" aria-label="visualizza foto">
+                                <figure>
+                                  <img src="assets/placeholders/placeholder-1000x665.jpg" alt="Descrizione immagine">
+                                </figure>
+                              </a>
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                            <div class="it-single-slide-wrapper gallery-item">
+                              <a href="#" aria-label="visualizza foto: didascalia della foto">
+                                <figure>
+                                  <img src="assets/placeholders/placeholder-1000x665.jpg" alt="Descrizione immagine">
+                                  <figcaption>Foto: didascalia della foto</figcaption>
+                                </figure>
+                              </a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>-->
+                <!--
+                <div class="video-container my-4">
+                  <iframe title="Descrizione video" aria-label="Descrizione video" width="560" height="315"
+                    src="https://www.youtube-nocookie.com/embed/4GbWfNHtHRg" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                  <div id="accordionDiv1" class="collapse-div transcription-accordion">
+                    <div class="collapse-header" id="headingA2">
+                      <button data-toggle="collapse" data-target="#accordion2" aria-expanded="false"
+                        aria-controls="accordion2">
+                        Trascrizione del video
+                      </button>
+                    </div>
+                    <div id="accordion2" class="collapse" role="region" aria-labelledby="headingA2"
+                      data-parent="#accordionDiv1">
+                      <div class="collapse-body">
+                        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                        aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                </div>-->
+
+                
+                <h3 class="h6">Destinatari</h3>
+                <p>{{evento_destinatari}}</p>
+
+                <!--
+                <h3 class="h6">Parteciperanno</h3>
+                <div class="card-deck card-deck-spaced mb-2">
+                  <div class="card card-bg card-avatar rounded">
+                    <a href="#">
+                      <div class="card-body">
+                        <div class="card-avatar-img">
+                          <img src="assets/placeholders/img-avatar-250x250.png" alt="Immagine profilo">
+                        </div>
+                        <div class="card-avatar-content">
+                          <p>Nome Cognome</p>
+                          <small>Responsabile</small>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card card-bg card-avatar rounded">
+                    <a href="#">
+                      <div class="card-body">
+                        <div class="card-avatar-img">
+                          <img src="assets/placeholders/img-avatar-250x250.png" alt="Immagine profilo">
+                        </div>
+                        <div class="card-avatar-content">
+                          <p>Nome Cognome</p>
+                          <small>Responsabile</small>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card card-bg card-avatar rounded">
+                    <a href="#">
+                      <div class="card-body">
+                        <div class="card-avatar-img">
+                          <img src="assets/placeholders/img-avatar-250x250.png" alt="Immagine profilo">
+                        </div>
+                        <div class="card-avatar-content">
+                          <p>Nome Cognome</p>
+                          <small>Responsabile</small>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                -->
+                <h2 class="h4" id="art-par-02">Luogo</h2>
+                <div class="card card-bg rounded mb-5">
+                  <div class="card-header">
+                    <strong class="d-block">{{evento2_luogo}}</strong>
+                    <!--<small class="d-block">Via Vaglia, 6, 00139 - Roma RM</small>
+                    <small class="d-block">Quartiere Tufello - 4° Circoscrizione</small>-->
+                  </div><!-- /card-header -->
+                  <div class="card-body p-0">
+                    <div class="row variable-gutters">
+                      <div class="col-lg-12">
+                        <div class="map-wrapper map-min-height">
+                          <img class="placeholder-image" src="./assets/placeholders/map-placeholder-big.png" alt="">
+                        </div>
+                      </div><!-- /col-lg-12 -->
+                    </div><!-- /row -->
+                  </div><!-- /card-body -->
+                </div><!-- /card card-bg rounded -->
+                <h2 class="h4" id="art-par-03">Date e orari</h2>
+                <div class="calendar-vertical mb-5">
+                  <div class="calendar-date">
+                    <div class="calendar-date-description rounded">
+                      <div class="calendar-date-description-content">
+                        <p>{{evento_inizio_ore}}</p>
+                      </div><!-- /calendar-date-description-content -->
+                    </div><!-- /calendar-date-description -->
+                    <h4 class="calendar-date-day">
+                      <p>{{evento_giorno}}</p>
+                      <small>{{evento_mese}}</small>
+                    </h4><!-- /calendar-date-day -->
+                  </div><!-- /calendar-date -->
+                  <div class="calendar-date">
+                    <div class="calendar-date-description rounded">
+                      <div class="calendar-date-description-content">
+                        <p>{{evento_fine_ore}}</p>
+                      </div><!-- /calendar-date-description-content -->
+                    </div><!-- /calendar-date-description -->
+                    <h4 class="calendar-date-day">
+                      <p>{{evento_giorno_fine}}</p>
+                      <small>{{evento_mese_fine}}</small>
+                    </h4><!-- /calendar-date-day -->
+                  </div><!-- /calendar-date -->
+                <!--
+                <h2 class="h4" id="art-par-04">Costi</h2>
+                <div class="text-border-left">
+                  <div class="text-icon">
+                    <svg class="icon svg-ticket">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-ticket"></use>
+                    </svg>
+                    <span>Tribuna 1 e 4</span>
+                  </div>
+                  <p class="price"><strong>€ 35</strong></p>
+                  <p>Tribune coperte site nella via Roma lato Palazzo Vivanet (tribuna n. 1) e nella via Roma fronte
+                    palazzo Civico (tribuna n. 4), per circa 770 posti a sedere.</p>
+                </div>
+                <div class="text-border-left">
+                  <div class="text-icon">
+                    <svg class="icon svg-ticket">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-ticket"></use>
+                    </svg>
+                    <span>Tribuna 2</span>
+                  </div>
+                  <p class="price"><strong>€ 45</strong></p>
+                  <p>Tribune coperte site nella via Roma lato Palazzo Vivanet (tribuna n. 1) e nella via Roma fronte
+                    palazzo Civico (tribuna n. 4), per circa 770 posti a sedere.</p>
+                </div>-->
+                <h2 class="h4" id="art-par-05">Contatti</h2>
+                <div class="h6">Organizzato da</div>
+                <div class="card-deck card-deck-spaced">
+                  <div class="card card-bg card-icon-main rounded">
+                    <a href="#">
+                      <div class="card-body">
+                        <svg class="icon" width="100%" height="100%" viewBox="0 0 100 100" version="1.1"
+                          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                          xml:space="preserve" xmlns:serif="http://www.serif.com/"
+                          style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+                          <g>
+                            <path
+                              d="M99.219,68.716l-9.745,-6.497l0,-18.359c0,-0.97 -0.786,-1.755 -1.755,-1.755l-7.017,0l0,-7.017c0,-0.97 -0.786,-1.755 -1.755,-1.755l-14.132,0c-0.796,-7.578 -6.677,-13.537 -13.938,-13.988l0,-3.556l10.527,0c0.968,0 1.754,-0.784 1.754,-1.754l0,-8.772c0,-0.97 -0.786,-1.754 -1.754,-1.754l-10.527,0l-1.754,0l-1.755,0l0,16.051c-6.436,1.22 -11.452,6.815 -12.183,13.773l-14.132,0c-0.969,0 -1.755,0.785 -1.755,1.755l0,7.017l-7.017,0c-0.969,0 -1.755,0.785 -1.755,1.755l0,18.359l-9.745,6.497c-0.488,0.325 -0.781,0.874 -0.781,1.459l0,24.562c0,0.97 0.786,1.754 1.754,1.754l96.492,0c0.968,0 1.754,-0.784 1.754,-1.754l0,-24.562c0,-0.585 -0.293,-1.134 -0.781,-1.459Z"
+                              style="fill:$greendark;fill-rule:nonzero;" />
+                            <rect x="50.877" y="7.018" width="8.772" height="5.263" style="fill:#c8edc3;" />
+                            <path
+                              d="M50,22.807c5.733,0 10.479,4.586 11.273,10.526l-22.546,0c0.794,-5.94 5.54,-10.526 11.273,-10.526Z"
+                              style="fill:#fff;fill-rule:nonzero;" />
+                            <rect x="22.807" y="36.842" width="54.386" height="5.263" style="fill:#c8edc3;" />
+                            <path d="M3.509,71.114l7.017,-4.679l0,26.547l-7.017,0l0,-21.868Z"
+                              style="fill:#c8edc3;fill-rule:nonzero;" />
+                            <path
+                              d="M14.035,63.158l0,-17.544l71.93,0l0,47.368l-7.018,0l0,-24.561c0,-0.97 -0.785,-1.754 -1.754,-1.754l-7.018,0c-0.968,0 -1.754,0.784 -1.754,1.754l0,24.561l-5.263,0l0,-24.561c0,-0.97 -0.786,-1.754 -1.754,-1.754l-7.018,0c-0.969,0 -1.754,0.784 -1.754,1.754l0,24.561l-5.264,0l0,-24.561c0,-0.97 -0.785,-1.754 -1.754,-1.754l-7.018,0c-0.968,0 -1.754,0.784 -1.754,1.754l0,24.561l-5.263,0l0,-24.561c0,-0.97 -0.786,-1.754 -1.754,-1.754l-7.018,0c-0.969,0 -1.754,0.784 -1.754,1.754l0,24.561l-7.018,0l0,-29.824Z"
+                              style="fill:#fff;fill-rule:nonzero;" />
+                            <rect x="24.561" y="70.175" width="3.509" height="22.807" style="fill:#c8edc3;" />
+                            <rect x="40.351" y="70.175" width="3.509" height="22.807" style="fill:#c8edc3;" />
+                            <rect x="56.14" y="70.175" width="3.509" height="22.807" style="fill:#c8edc3;" />
+                            <rect x="71.93" y="70.175" width="3.509" height="22.807" style="fill:#c8edc3;" />
+                            <path d="M96.491,92.982l-7.017,0l0,-26.547l7.017,4.679l0,21.868Z"
+                              style="fill:#c8edc3;fill-rule:nonzero;" />
+                            <path
+                              d="M22.807,61.404l7.018,0c0.968,0 1.754,-0.785 1.754,-1.755l0,-7.017c0,-0.97 -0.786,-1.755 -1.754,-1.755l-7.018,0c-0.969,0 -1.754,0.785 -1.754,1.755l0,7.017c0,0.97 0.785,1.755 1.754,1.755Z"
+                              style="fill:$greendark;fill-rule:nonzero;" />
+                            <path
+                              d="M38.596,61.404l7.018,0c0.969,0 1.754,-0.785 1.754,-1.755l0,-7.017c0,-0.97 -0.785,-1.755 -1.754,-1.755l-7.018,0c-0.968,0 -1.754,0.785 -1.754,1.755l0,7.017c0,0.97 0.786,1.755 1.754,1.755Z"
+                              style="fill:$greendark;fill-rule:nonzero;" />
+                            <path
+                              d="M54.386,61.404l7.018,0c0.968,0 1.754,-0.785 1.754,-1.755l0,-7.017c0,-0.97 -0.786,-1.755 -1.754,-1.755l-7.018,0c-0.969,0 -1.754,0.785 -1.754,1.755l0,7.017c0,0.97 0.785,1.755 1.754,1.755Z"
+                              style="fill:$greendark;fill-rule:nonzero;" />
+                            <path
+                              d="M70.175,61.404l7.018,0c0.969,0 1.754,-0.785 1.754,-1.755l0,-7.017c0,-0.97 -0.785,-1.755 -1.754,-1.755l-7.018,0c-0.968,0 -1.754,0.785 -1.754,1.755l0,7.017c0,0.97 0.786,1.755 1.754,1.755Z"
+                              style="fill:$greendark;fill-rule:nonzero;" />
+                            <rect x="24.561" y="54.386" width="3.509" height="3.509" style="fill:#c8edc3;" />
+                            <rect x="40.351" y="54.386" width="3.509" height="3.509" style="fill:#c8edc3;" />
+                            <rect x="56.14" y="54.386" width="3.509" height="3.509" style="fill:#c8edc3;" />
+                            <rect x="71.93" y="54.386" width="3.509" height="3.509" style="fill:#c8edc3;" />
+                          </g>
+                        </svg>
+                        <div class="card-icon-content">
+                          <p><strong>{{istituto_nome}}</strong></p>
+                        </div><!-- /card-icon-content -->
+                      </div><!-- /card-body -->
+                    </a>
+                  </div><!-- /card card-bg card-icon-main rounded -->
+                </div><!-- /card-deck card-deck-spaced -->
+                
+                <h2 class="h4" id="art-par-06">Ulteriori informazioni</h2>
+                <!--<div class="h6">Documenti</div>-->
+                <div class="card-deck card-deck-spaced mb-3">
+                  <div class="card card-bg card-icon rounded">
+                    <a href="#">
+                      <div class="card-body">
+                        <svg class="icon it-pdf-document">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#it-pdf-document"></use>
+                        </svg>
+                        <div class="card-icon-content">
+                          <p><strong>Tipologia evento: {{evento_tipologia}}</strong></p>
+                          <small>Ingresso {{evento_tipo}}</small>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <!--
+                <div class="in-evidence mb-5 py-4 pl-2 pr-2">
+                  <ul class="mb-0">
+                    <li><strong class="mr-2">Sito web:</strong>
+                      <a href="#" target="_blank" aria-label="vai a indirizzo web link esterno apertura nuova scheda"
+                        class="text-underline-hover">indirizzo web</a>
+                    </li>
+                    <li><strong class="mr-2">Patrocinato da:</strong> Ente patrocinatore</li>
+                    <li><strong class="mr-2">Sponsor:</strong> Sponsor dell'evento</li>
+                  </ul>
+                </div>
+              -->
+              <!-- 
+              <div class="article-footer">
+                  <p><strong>Pubblicato:</strong> 12.02.2022 <span>-</span> <strong>Revisione:</strong> 15.04.2022</p>
+                  <p>Eccetto dove diversamente specificato, questo articolo è stato rilasciato sotto Licenza Creative
+                    Commons Attribuzione 4.0 Italia.</p>
+                </div>-->
+              </article>
+            </div><!-- /col-lg-6 -->
+            <div class="col-lg-3 aside-border-left px-0">
+              <div class="aside-sticky">
+                <!--
+                <div class="d-flex justify-content-end pb-4">
+                  <div class="actions-wrapper actions-main">
+                    <p><a class="text-underline text-greendark" target="_blank" href="#">
+                        + aggiungi a Google Calendar</a></p>
+                  </div>
+                </div>-->
+
+                <div class="d-flex justify-content-end pb-4">
+                  <div class="actions-wrapper actions-main">
+                    <a class="toggle-actions" href="#" title="Vedi azioni" data-target="#modal-more-items"
+                      data-toggle="modal">
+                      <svg class="it-more-items">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#it-more-items"></use>
+                      </svg>
+                      <span>Stampa / Condividi</span>
+                    </a>
+                    <div class="modal fade modal-actions" id="modal-more-items" tabindex="-1" role="dialog"
+                      aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <div class="link-list-wrapper">
+                              <ul class="link-list">
+                                <li>
+                                  <a href="#" class="list-item left-icon" title="Stampa il contenuto">
+                                    <svg class="icon it-print">
+                                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#it-print"></use>
+                                    </svg>
+                                    <span>Stampa</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#" class="list-item left-icon" title="Invia il contenuto">
+                                    <svg class="icon it-email">
+                                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#it-email"></use>
+                                    </svg>
+                                    <span>Invia</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="list-item collapsed link-toggle" role="button" title="Menu Condividi"
+                                    href="#social-share" data-toggle="collapse" aria-expanded="false"
+                                    aria-controls="social-share" id="share-control">
+                                    <svg class="icon it-share">
+                                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#it-share"></use>
+                                    </svg>
+                                    <span>Condividi</span>
+                                    <svg class="icon icon-toggle svg-arrow-down-small">
+                                      <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        xlink:href="#svg-arrow-down-small"></use>
+                                    </svg>
+                                  </a>
+                                  <ul class="link-sublist collapse" id="social-share" role="region"
+                                    aria-labelledby="share-control">
+                                    <li>
+                                      <a class="list-item" href="#" title="Condividi su: Facebook">
+                                        <svg class="icon it-social-facebook">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="#it-social-facebook"></use>
+                                        </svg>
+                                        <span>Facebook</span>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a class="list-item" href="#" title="Condividi su: Twitter">
+                                        <svg class="icon it-social-twitter">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="#it-social-twitter"></use>
+                                        </svg>
+                                        <span>Twitter</span>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a class="list-item" href="#" title="Condividi su: Linkedin">
+                                        <svg class="icon it-social-linkedin">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="#it-social-linkedin"></use>
+                                        </svg>
+                                        <span>Linkedin</span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                          </div><!-- /modal-body -->
+                        </div><!-- /modal-content -->
+                      </div><!-- /modal-dialog -->
+                    </div><!-- /modal -->
+                  </div><!-- /actions-wrapper -->
+
+                </div>
+              </div>
+            </div><!-- /col-lg-3 -->
+          </div><!-- /row -->
+        </div><!-- /container -->
+      </section>
+<!--
+      <section class="section bg-gray-gradient py-5" id="art-par-09">
+        <div class="container pt-3">
+
+          <div class="row variable-gutters">
+            <div class="col-lg-12">
+
+              <h2 class="h3 mb-5 text-center semi-bold text-gray-primary">Contenuti correlati</h2>
+
+              <div class="it-carousel-wrapper carousel-notice it-carousel-landscape-abstract-three-cols splide"
+                data-bs-carousel-splide>
+                <div class="splide__track ps-lg-3 pe-lg-3">
+                  <ul class="splide__list it-carousel-all">
+                    <li class="splide__slide">
+                      <div class="card card-bg card-vertical-thumb bg-white card-thumb-rounded">
+                        <div class="card-body">
+                          <div class="card-content">
+                            <h3 class="h5"><a href="#">Svelato il mistero dei "barioni nascosti", la materia che
+                                mancava nell'Universo</a></h3>
+                            <p>Un team di ricercatori, guidati dall'italiano Fabrizio Nicastro dell'Inaf, è riuscito
+                              a…</p>
+                          </div>
+                          <div class="card-thumb">
+                            <img src="assets/placeholders/placeholder-190x290.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="card-comments-wrapper">
+                          <div class="card-avatar-img">
+                            <img src="assets/placeholders/img-avatar-250x250.png" alt="Immagine profilo">
+                          </div>
+                          <div class="card-avatar-content">
+                            <p class="font-weight-normal">da <strong class="text-underline"><u>Nome
+                                  Cognome</u></strong></p>
+                            <small>Professore</small>
+                          </div>
+                          <div class="comments">
+                            <p>344</p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="card card-bg card-vertical-thumb bg-white card-thumb-rounded">
+                        <div class="card-body">
+                          <div class="card-content">
+                            <h3 class="h5"><a href="#">Svelato il mistero dei "barioni nascosti", la materia che
+                                mancava nell'Universo</a></h3>
+                            <p>Un team di ricercatori, guidati dall'italiano Fabrizio Nicastro dell'Inaf, è riuscito
+                              a…</p>
+                          </div>
+                        </div>
+                        <div class="card-comments-wrapper">
+                          <div cslass="card-avatar-img">
+                            <img src="assets/placeholders/img-avatar-250x250.png" alt="Immagine profilo">
+                          </div>
+                          <div class="card-avatar-content">
+                            <p class="font-weight-normal">da <strong class="text-underline"><u>Nome
+                                  Cognome</u></strong></p>
+                            <small>Professore</small>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    -->
+    </main>
+
+    @@include('./includes/footer.html')
+
+  </div><!-- /push_container -->
+
+  @@include('./includes/scripts.html')
+
+</body>
+
+</html>

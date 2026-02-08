@@ -1,0 +1,43 @@
+{{#notizie1_titolo.length}}
+
+<article class="card card-bg card-article card-article-greendark">
+  <div class="card-body">
+    <div class="card-article-img"
+      style="background-image: url('assets/placeholders/placeholder-1280x960.jpg');">
+      <div class="date">
+        <span class="year">{{notizie1_anno}}</span>
+        <span class="day">{{notizie1_giorno}}</span>
+        <span class="month">{{notizie1_mese}}</span>
+      </div>
+    </div>
+    <div class="card-article-content">
+      <h2 class="h3"><a href="novita-notizia-pagina1.html">{{notizie1_titolo}}</a></h2>
+      <p>{{notizie1_desc_breve}}</p>
+    </div><!-- /card-avatar-content -->
+  </div><!-- /card-body -->
+</article><!-- /card card-bg card-article -->
+
+{{/notizie1_titolo.length}}
+
+{{#notizie2_titolo.length}}
+
+<article class="card card-bg card-article card-article-greendark">
+  <div class="card-body">
+    <div class="card-article-img">
+      <div class="date">
+        <span class="year">{{notizie2_anno}}</span>
+        <span class="day">{{notizie2_giorno}}</span>
+        <span class="month">{{notizie2_mese}}</span>
+      </div>
+      <svg class="icon-greendark svg-newspaper">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-newspaper"></use>
+      </svg>
+    </div>
+    <div class="card-article-content">
+      <h2 class="h3"><a href="novita-notizia-pagina2.html">{{notizie2_titolo}}</a></h2>
+      <p>{{notizie2_desc_breve}}</p>
+    </div><!-- /card-avatar-content -->
+  </div><!-- /card-body -->
+</article><!-- /card card-bg card-article -->
+
+{{/notizie2_titolo.length}}

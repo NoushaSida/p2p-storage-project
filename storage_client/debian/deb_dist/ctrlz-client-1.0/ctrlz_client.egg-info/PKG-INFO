@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: ctrlz-client
+Version: 1.0
+Summary: Client interface to use ctrl+Z storage
+Home-page: UNKNOWN
+Author: Alessandro Zanni
+Author-email: go@ctrlzeta.me
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux

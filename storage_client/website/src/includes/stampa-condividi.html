@@ -1,0 +1,100 @@
+<div class="actions-wrapper actions-main">
+    <a class="toggle-actions" href="#" title="Vedi azioni" data-target="#modal-more-items"
+      data-toggle="modal">
+      <svg class="it-more-items">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#it-more-items"></use>
+      </svg>
+      <span>Stampa / Condividi</span>
+    </a>
+    <div class="modal fade modal-actions" id="modal-more-items" tabindex="-1" role="dialog"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="link-list-wrapper">
+              <ul class="link-list">
+                <!--<li>
+                  <a href="#" onclick="generatePdf()" class="list-item left-icon" title="Genera PDF">
+                    <svg class="icon it-pdf">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#it-pdf-document"></use>
+                    </svg>
+                    <span>Genera PDF</span>
+                  </a>
+                </li>-->
+                <!--
+                    <li>
+                      <a href="#" class="list-item left-icon" title="Scarica il contenuto">
+                        <svg class="icon it-download"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#it-download"></use></svg>
+                        <span>Scarica</span>
+                      </a>
+                    </li>
+                -->
+                <li>
+                  <a href="javascript:window.print();" class="list-item left-icon" title="Stampa il contenuto">
+                    <svg class="icon it-print">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#it-print"></use>
+                    </svg>
+                    <span>Stampa</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:?subject=Pagina1&body=https%3A%2F%2Fwww.FedericoEnriques.it%2F" class="list-item left-icon" title="Invia il contenuto">
+                    <svg class="icon it-email">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#it-email"></use>
+                    </svg>
+                    <span>Invia</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="list-item collapsed link-toggle" role="button" title="Menu Condividi"
+                    href="#social-share" data-toggle="collapse" aria-expanded="false"
+                    aria-controls="social-share" id="share-control">
+                    <svg class="icon it-share">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#it-share"></use>
+                    </svg>
+                    <span>Condividi</span>
+                    <svg class="icon icon-toggle svg-arrow-down-small">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-arrow-down-small">
+                      </use>
+                    </svg>
+                  </a>
+                  <ul class="link-sublist collapse" id="social-share" role="region"
+                    aria-labelledby="share-control">
+                    <li>
+                      <a class="list-item" title="Condividi su: Facebook"
+                        href="https://www.facebook.com/sharer/sharer.php">
+                        <svg class="icon it-social-facebook">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#it-social-facebook">
+                          </use>
+                        </svg>
+                        <span>Facebook</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-item" title="Condividi su: Twitter"
+                        href="http://twitter.com/share">
+                        <svg class="icon it-social-twitter">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#it-social-twitter">
+                          </use>
+                        </svg>
+                        <span>Twitter</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-item" href="https://www.linkedin.com/shareArticle" title="Condividi su: Linkedin">
+                        <svg class="icon it-social-linkedin">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#it-social-linkedin">
+                          </use>
+                        </svg>
+                        <span>Linkedin</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div><!-- /modal-body -->
+        </div><!-- /modal-content -->
+      </div><!-- /modal-dialog -->
+    </div><!-- /modal -->
+  </div><!-- /actions-wrapper -->

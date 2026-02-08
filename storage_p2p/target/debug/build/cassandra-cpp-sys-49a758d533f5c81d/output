@@ -1,0 +1,12 @@
+cargo:rustc-flags=-l dylib=cassandra
+cargo:rustc-flags=-l dylib=crypto
+cargo:rustc-flags=-l dylib=ssl
+cargo:rustc-flags=-l dylib=stdc++
+cargo:rustc-flags=-l dylib=uv
+cargo:rustc-link-search=/usr/lib/x86_64-linux-gnu
+cargo:rustc-link-search=/usr/local/lib/x86_64-linux-gnu
+cargo:rustc-link-search=/usr/local/lib64
+cargo:rustc-link-search=/usr/local/lib
+cargo:rustc-link-search=/usr/lib64/
+cargo:rustc-link-search=/usr/lib/
+cargo:rustc-link-search=/usr/local/opt/openssl/lib

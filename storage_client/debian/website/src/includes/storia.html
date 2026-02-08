@@ -1,0 +1,124 @@
+<!--<section class="section section-padding bg-blue-dark history-box">-->
+<section class="section section-padding bg-blue-dark">
+    <div class="container">
+      <div class="row variable-gutters mt-0 mt-xl-2">
+        <div class="col">
+          <div class="title-section text-center mb-5">
+            <h3 class="mb-2" style="color: #ffffff;">La Storia dell'organizzazione</h3>
+            <p style="color: #ffffff;">Ecco la nostra storia.</p>
+          </div><!-- /title-section -->
+        </div><!-- /col -->
+      </div><!-- /row -->
+      <div class="row variable-gutters">
+        <div class="col">
+          <div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols splide history-carousel"
+            data-bs-carousel-splide>
+            <div class="splide__track">
+              <ul class="splide__list">
+                
+                {{#storia_evento_descrizione1.length}}
+                
+                <li class="splide__slide">
+                  <div class="it-single-slide-wrapper">
+                    <div class="card card-img card-serif">
+                      <div class="card-body px-0">
+                        <span class="h5">{{storia_evento_mese1}} {{storia_evento_anno1}}</span>
+                        <h3>{{storia_evento_titolo1}}</h3>
+                        <p>{{storia_evento_descrizione1}}</p>
+                      </div><!-- /card-body -->
+                    </div><!-- /card -->
+                  </div>
+                </li>
+
+                {{/storia_evento_descrizione1.length}}
+
+                {{#storia_evento_descrizione2.length}}
+                
+                <li class="splide__slide">
+                  <div class="it-single-slide-wrapper">
+                    <div class="card card-img card-serif">
+                      <div class="card-body px-0">
+                        <span class="h5">{{storia_evento_mese2}} {{storia_evento_anno2}}</span>
+                        <h3>{{storia_evento_titolo2}}</h3>
+                        <p>{{storia_evento_descrizione2}}</p>
+                      </div><!-- /card-body -->
+                    </div><!-- /card -->
+                  </div>
+                </li>
+
+                {{/storia_evento_descrizione2.length}}
+
+                {{#storia_evento_descrizione3.length}}
+                
+                <li class="splide__slide">
+                  <div class="it-single-slide-wrapper">
+                    <div class="card card-img card-serif">
+                      <div class="card-body px-0">
+                        <span class="h5">{{storia_evento_mese3}} {{storia_evento_anno3}}</span>
+                        <h3>{{storia_evento_titolo3}}</h3>
+                        <p>{{storia_evento_descrizione3}}</p>
+                      </div><!-- /card-body -->
+                    </div><!-- /card -->
+                  </div>
+                </li>
+
+                {{/storia_evento_descrizione3.length}}
+
+                {{#storia_evento_descrizione4.length}}
+                
+                <li class="splide__slide">
+                  <div class="it-single-slide-wrapper">
+                    <div class="card card-img card-serif">
+                      <div class="card-body px-0">
+                        <span class="h5">{{storia_evento_mese4}} {{storia_evento_anno4}}</span>
+                        <h3>{{storia_evento_titolo4}}</h3>
+                        <p>{{storia_evento_descrizione4}}</p>
+                      </div><!-- /card-body -->
+                    </div><!-- /card -->
+                  </div>
+                </li>
+
+                {{/storia_evento_descrizione4.length}}
+
+              </ul>
+            </div>
+          </div>
+
+          <div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols splide year-carousel"
+            data-bs-carousel-splide>
+            <div class="splide__track">
+              <ul class="splide__list">
+                <!--<li class="splide__slide">
+                  <div class="it-single-slide-wrapper dot-text">{{storia_anno_fondazione}}</div>
+                </li>-->
+                {{#storia_evento_descrizione1.length}}
+                <li class="splide__slide">
+                  <div class="it-single-slide-wrapper dot-text">{{storia_evento_anno1}}</div>
+                </li>
+                {{/storia_evento_descrizione1.length}}
+                {{#storia_evento_descrizione2.length}}
+                <li class="splide__slide">
+                  <div class="it-single-slide-wrapper dot-text">{{storia_evento_anno2}}</div>
+                </li>
+                {{/storia_evento_descrizione2.length}}
+                {{#storia_evento_descrizione3.length}}
+                <li class="splide__slide">
+                  <div class="it-single-slide-wrapper dot-text">{{storia_evento_anno3}}</div>
+                </li>
+                {{/storia_evento_descrizione3.length}}
+                {{#storia_evento_descrizione4.length}}
+                <li class="splide__slide">
+                  <div class="it-single-slide-wrapper dot-text">{{storia_evento_anno4}}</div>
+                </li>
+                {{/storia_evento_descrizione4.length}}
+                <!--<li class="splide__slide">
+                  <div class="it-single-slide-wrapper dot-text">{{storia_anno_sito}}</div>
+                </li>-->
+              </ul>
+            </div>
+          </div>
+
+        </div><!-- /col -->
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </section><!-- /section -->

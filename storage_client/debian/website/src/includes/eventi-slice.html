@@ -1,0 +1,92 @@
+<div class="title-section mb-5">
+    <h3 class="h4">Eventi recenti</h3>
+  </div><!-- /title-large -->
+  <div class="it-carousel-wrapper carousel-notice it-carousel-landscape-abstract-three-cols splide"
+    data-bs-carousel-splide>
+    <div class="splide__track">
+      <ul class="splide__list">
+
+        {{#evento1_titolo.length}}
+
+        <li class="splide__slide">
+          <div class="it-single-slide-wrapper">
+            <div class="card card-bg card-event bg-white card-thumb-rounded">
+              <div class="card-body">
+                <div class="card-content match-height">
+                  <h4 class="h5"><a href="novita-evento-pagina1.html">{{evento1_titolo}}</a></h4>
+                  <p>{{evento1_oggetto}}</p>
+                </div>
+              </div><!-- /card-body -->
+              <div class="card-event-dates">
+                <div class="card-event-dates-icon">
+                  <svg class="icon svg-calendar">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-calendar"></use>
+                  </svg>
+                </div><!-- /card-event-dates-icon -->
+                <div class="card-event-dates-content">
+                  <p class="font-weight-normal"><strong>dal {{evento1_data_inizio}}<br />al {{evento1_data_fine}}</strong></p>
+                </div><!-- /card-event-dates-content -->
+              </div><!-- /card-event-dates -->
+            </div><!-- /card -->
+          </div>
+        </li>
+
+        {{/evento1_titolo.length}}
+
+        {{#evento2_titolo.length}}
+
+        <li class="splide__slide">
+          <div class="it-single-slide-wrapper">
+            <div class="card card-bg card-event bg-white card-thumb-rounded">
+              <div class="card-body">
+                <div class="card-content match-height">
+                  <h4 class="h5"><a href="novita-evento-pagina1.html">{{evento2_titolo}}</a></h4>
+                  <p>{{evento2_oggetto}}</p>
+                </div>
+              </div><!-- /card-body -->
+              <div class="card-event-dates">
+                <div class="card-event-dates-icon">
+                  <svg class="icon svg-calendar">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-calendar"></use>
+                  </svg>
+                </div><!-- /card-event-dates-icon -->
+                <div class="card-event-dates-content">
+                  <p class="font-weight-normal"><strong>dal {{evento2_data_inizio}}<br />al {{evento2_data_fine}}</strong></p>
+                </div><!-- /card-event-dates-content -->
+              </div><!-- /card-event-dates -->
+            </div><!-- /card -->
+          </div>
+        </li>
+
+        {{/evento2_titolo.length}}
+
+        {{#evento3_titolo.length}}
+
+        <li class="splide__slide">
+          <div class="it-single-slide-wrapper">
+            <div class="card card-bg card-event bg-white card-thumb-rounded">
+              <div class="card-body">
+                <div class="card-content match-height">
+                  <h4 class="h5"><a href="novita-evento-pagina1.html">{{evento3_titolo}}</a></h4>
+                  <p>{{evento3_oggetto}}</p>
+                </div>
+              </div><!-- /card-body -->
+              <div class="card-event-dates">
+                <div class="card-event-dates-icon">
+                  <svg class="icon svg-calendar">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-calendar"></use>
+                  </svg>
+                </div><!-- /card-event-dates-icon -->
+                <div class="card-event-dates-content">
+                  <p class="font-weight-normal"><strong>dal {{evento3_data_inizio}}<br />al {{evento3_data_fine}}</strong></p>
+                </div><!-- /card-event-dates-content -->
+              </div><!-- /card-event-dates -->
+            </div><!-- /card -->
+          </div>
+        </li>
+
+        {{/evento3_titolo.length}}
+
+      </ul>
+    </div>
+  </div>

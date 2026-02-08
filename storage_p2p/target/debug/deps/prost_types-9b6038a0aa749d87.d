@@ -1,0 +1,10 @@
+/media/alessandro/e155a5bb-92dd-476e-9b1e-a5c59b25b74b/Nextcloud/P2P_storage/storage_p2p/target/debug/deps/libprost_types-9b6038a0aa749d87.rmeta: /home/alessandro/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-types-0.12.3/src/lib.rs /home/alessandro/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-types-0.12.3/src/datetime.rs /home/alessandro/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-types-0.12.3/src/compiler.rs /home/alessandro/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-types-0.12.3/src/protobuf.rs
+
+/media/alessandro/e155a5bb-92dd-476e-9b1e-a5c59b25b74b/Nextcloud/P2P_storage/storage_p2p/target/debug/deps/libprost_types-9b6038a0aa749d87.rlib: /home/alessandro/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-types-0.12.3/src/lib.rs /home/alessandro/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-types-0.12.3/src/datetime.rs /home/alessandro/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-types-0.12.3/src/compiler.rs /home/alessandro/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-types-0.12.3/src/protobuf.rs
+
+/media/alessandro/e155a5bb-92dd-476e-9b1e-a5c59b25b74b/Nextcloud/P2P_storage/storage_p2p/target/debug/deps/prost_types-9b6038a0aa749d87.d: /home/alessandro/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-types-0.12.3/src/lib.rs /home/alessandro/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-types-0.12.3/src/datetime.rs /home/alessandro/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-types-0.12.3/src/compiler.rs /home/alessandro/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-types-0.12.3/src/protobuf.rs
+
+/home/alessandro/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-types-0.12.3/src/lib.rs:
+/home/alessandro/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-types-0.12.3/src/datetime.rs:
+/home/alessandro/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-types-0.12.3/src/compiler.rs:
+/home/alessandro/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-types-0.12.3/src/protobuf.rs:

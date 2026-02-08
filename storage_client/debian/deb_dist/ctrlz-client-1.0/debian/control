@@ -1,0 +1,12 @@
+Source: ctrlz-client
+Maintainer: Alessandro Zanni <go@ctrlzeta.me>
+Section: python
+Priority: optional
+Build-Depends: python3-setuptools, python3-all, debhelper (>= 9)
+Standards-Version: 3.9.1
+
+Package: python3-ctrlz-client
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: Client interface to use ctrl+Z storage
+

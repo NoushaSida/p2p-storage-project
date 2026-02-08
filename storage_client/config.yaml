@@ -1,0 +1,14 @@
+cookie:
+  expiry_days: 30
+  key: random_signature_key
+  name: random_cookie_name
+credentials:
+  usernames:
+    user:
+      email: test@test.com
+      name: name
+      password: $2b$12$JLm0DmG45NYwwxp/FGHkPeKb9/ZzdU/SCClPxMo4VaRHyO.HVogNO
+      #pwd
+preauthorized:
+  emails:
+  - melsby@gmail.com

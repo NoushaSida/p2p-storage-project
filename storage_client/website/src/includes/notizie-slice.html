@@ -1,0 +1,74 @@
+<div class="title-section mb-5">
+    <h2 class="h4">Notizie recenti</h2>
+    </div><!-- /title-large -->
+    <div class="it-carousel-wrapper carousel-notice it-carousel-landscape-abstract-three-cols splide"
+    data-bs-carousel-splide>
+    <div class="splide__track">
+        <ul class="splide__list">
+        
+        {{#notizie1_titolo.length}}
+        
+        <li class="splide__slide">
+          <div class="it-single-slide-wrapper">
+            <div class="card card-bg card-vertical-thumb bg-white card-thumb-rounded">
+                <div class="card-body">
+                <div class="card-content match-height">
+                    <h3 class="h5"><a href="novita-notizia-pagina1.html">{{notizie1_titolo}}</a></h3>
+                    <p>{{notizie1_desc_breve}}</p>
+                </div>
+                <div class="card-thumb">
+                    <img src="assets/placeholders/placeholder-190x290.jpg" alt="Descrizione immagine">
+                </div>
+                </div><!-- /card-body -->
+                <div class="card-comments-wrapper">
+                <div class="card-avatar-img">
+                    <img src="assets/placeholders/img-avatar-250x250.png" alt="Immagine profilo">
+                </div><!-- /card-avatar-img -->
+                <div class="card-avatar-content">
+                    <p class="font-weight-normal">da <strong class="text-underline"><u>{{notizie1_autore}}</u></strong>
+                    </p>
+                    <!--<small>Professore</small>-->
+                </div><!-- /card-avatar-content -->
+                <!--<div class="comments">
+                    <p>344</p>
+                </div>--><!-- /comments -->
+                </div><!-- /card-comments-wrapper -->
+            </div><!-- /card -->
+            </div>
+        </li>
+
+        {{/notizie1_titolo.length}}
+
+        {{#notizie2_titolo.length}}
+
+        <li class="splide__slide">
+            <div class="it-single-slide-wrapper">
+            <div class="card card-bg card-vertical-thumb bg-white card-thumb-rounded">
+                <div class="card-body">
+                <div class="card-content match-height">
+                    <h3 class="h5"><a href="novita-notizia-pagina2.html">{{notizie2_titolo}}</a></h3>
+                    <p>{{notizie2_desc_breve}}</p>
+                </div>
+                </div><!-- /card-body -->
+                <div class="card-comments-wrapper">
+                <div class="card-avatar-img">
+                    <img src="assets/placeholders/img-avatar-250x250.png" alt="Immagine profilo">
+                </div><!-- /card-avatar-img -->
+                <div class="card-avatar-content">
+                    <p class="font-weight-normal">da <strong class="text-underline"><u>{{notizie2_autore}}</u></strong>
+                    </p>
+                    <!--<small>Professore</small>-->
+                </div><!-- /card-avatar-content -->
+                <!--<div class="comments">
+                    <p>344</p>
+                </div>--><!-- /comments -->
+                </div><!-- /card-comments-wrapper -->
+            </div><!-- /card -->
+            </div>
+        </li>
+
+        {{/notizie2_titolo.length}}
+
+        </ul>
+    </div>
+</div>

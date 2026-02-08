@@ -1,0 +1,74 @@
+syntax = "proto3";
+
+message MsgUser {
+    string username = 1;
+    string name = 2;
+    string surname = 3;
+    string password = 4;
+    string email = 5;
+    string salt = 6;
+    string registration_date = 7;
+}
+
+message MsgUsername {
+    string username = 1;
+}
+
+message MsgPeerId {
+    string peer_id = 1;
+}
+
+message MsgDevice {
+    string username = 1;
+    string device_name = 2;
+    string disk_size = 3;
+    string mount_point = 4;
+    string country = 5;
+    string registration_date = 6;
+}
+
+message MsgFileId {
+    string username = 1;
+    string file_id = 2;
+}
+
+message MsgFileInfo {
+    string username = 1;
+    string file_id = 2;
+    string file_name = 3;
+    string file_size = 4;
+    string file_size_compressed = 5;
+    string file_type = 6;
+    string file_status = 7;
+    string upload_date = 8;
+    bytes file_bytes = 9;
+    string owner = 10;
+    string write = 11;
+}
+
+message MsgChunk {
+    string file_id = 1;
+    string piece_id = 2;
+    string chunk_id = 3;
+    bytes chunk_bytes = 4;
+}
+
+message MsgMetrics {
+    string peer_id = 1;
+    string uptime_start = 2;
+    string uptime_end = 3;
+    string disk_read = 4;
+    string disk_write = 5;
+    string throughput = 6;
+}
+
+message MsgLiveness {
+    string peer_id = 1;
+}
+
+message MsgPermissions {
+    string username = 1;
+    string file_id = 2;
+    string owner = 3;
+    string write = 4;
+}

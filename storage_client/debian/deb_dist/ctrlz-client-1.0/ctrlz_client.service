@@ -1,0 +1,10 @@
+[Unit]
+Description=Ctrlz Client
+
+[Service]
+ExecStart=/usr/bin/python3 /home/alessandro/ctrlz_client/main_page.py
+WorkingDirectory=/home/alessandro/ctrlz_client
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,61 @@
+<section class="section bg-white section-map-wrapper">
+    <div class="map-aside">
+      <!--<h2 class="h3">Edifici Scolastici</h2>-->
+      <!--<div class="card card-bg card-icon rounded mb-3">
+        <a href="scheda-luogo-sede-principale.html" data-element="location-link">
+          <div class="card-body">
+            <svg class="icon svg-marker-simple">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-marker-simple"></use>
+            </svg>
+            <div class="card-icon-content">
+              <p><strong>Sede Principale</strong></p>
+              <small>{{istituto_indirizzo}} - {{istituto_cap}} {{istituto_citta}}</small>
+            </div>
+          </div>
+        </a>
+      </div>-->
+
+      {{#luogo1_nome.length}}
+
+      <div class="card card-bg card-icon rounded mb-3">
+        <a href="scheda-luogo-pagina1.html" data-element="location-link">
+          <div class="card-body">
+            <svg class="icon svg-marker-simple">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-marker-simple"></use>
+            </svg>
+            <div class="card-icon-content">
+              <p><strong>{{luogo1_nome}}</strong></p>
+              <small>{{luogo1_indirizzo}} </small>
+            </div><!-- /card-icon-content -->
+          </div><!-- /card-body -->
+        </a>
+      </div><!-- /card card-bg card-icon rounded -->
+
+      {{/luogo1_nome.length}}
+
+      {{#luogo2_nome.length}}
+
+      <div class="card card-bg card-icon rounded mb-3">
+        <a href="scheda-luogo-pagina2.html" data-element="location-link">
+          <div class="card-body">
+            <svg class="icon svg-marker-simple">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-marker-simple"></use>
+            </svg>
+            <div class="card-icon-content">
+              <p><strong>{{luogo2_nome}}</strong></p>
+              <small>{{luogo2_indirizzo}} </small>
+            </div><!-- /card-icon-content -->
+          </div><!-- /card-body -->
+        </a>
+      </div><!-- /card card-bg card-icon rounded -->
+
+      {{/luogo2_nome.length}}
+
+    </div>
+    <div class="map-wrapper" id="map">
+    </div>
+<!--        <div class="map-wrapper">
+      <img class="placeholder-image" src="./assets/placeholders/map-placeholder-big.png" alt="">
+    </div>
+  -->
+  </section>

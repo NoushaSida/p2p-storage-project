@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Mon, 25 Mar 2024 19:23:11 +0100
+Source: ctrlz-client
+Architecture: source
+Version: 1.0-1
+Distribution: unstable
+Urgency: low
+Maintainer: Alessandro Zanni <go@ctrlzeta.me>
+Changed-By: Alessandro Zanni <go@ctrlzeta.me>
+Changes:
+ ctrlz-client (1.0-1) unstable; urgency=low
+ .
+   * source package automatically created by stdeb 0.10.0
+Checksums-Sha1:
+ 6c114e06c94b21abb758c2053781b38541352758 842 ctrlz-client_1.0-1.dsc
+ 87ca2fbcba41f66b82699f0864c8a8e0d947b896 7607 ctrlz-client_1.0.orig.tar.gz
+ 395cf769d8a23da71fbe0ba1bb0a90d5accdac1d 888 ctrlz-client_1.0-1.debian.tar.xz
+ 1a03e69a9a6749730ab76bae60953d6c864470bd 5931 ctrlz-client_1.0-1_source.buildinfo
+Checksums-Sha256:
+ be1d41d527d2b6870298929a93a701aa9d2637cfb7d4ab6f0167a333c39a5b74 842 ctrlz-client_1.0-1.dsc
+ 43944093fbd2e36ae81f556a72f7448dd2a2267b450bd7589f38a7832b674963 7607 ctrlz-client_1.0.orig.tar.gz
+ 4614531cbc553969f3fdfbbc22783bd926660faae4d28e1d734d731623e502d9 888 ctrlz-client_1.0-1.debian.tar.xz
+ f0b66eebd455d4c734a631a030abb256530b1bafabd8b968c5eb564e637a8ec1 5931 ctrlz-client_1.0-1_source.buildinfo
+Files:
+ 5e0a1e8463ae419d55317b37f44af666 842 python optional ctrlz-client_1.0-1.dsc
+ c613a97f970d12b2f387826dced6a6cf 7607 python optional ctrlz-client_1.0.orig.tar.gz
+ d56139e6aeb8aeccbe3e130ae8b263c9 888 python optional ctrlz-client_1.0-1.debian.tar.xz
+ d69f4c7d2bc72659505d824da7b1d6b3 5931 python optional ctrlz-client_1.0-1_source.buildinfo

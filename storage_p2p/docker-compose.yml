@@ -1,0 +1,39 @@
+version: '3.9'
+services:
+  cassandra:
+    image: cassandra:latest
+    container_name: cassandra
+    networks:
+      - mynetwork
+    ports:
+      - "7199:7199" # JMX
+      - "7000:7000" # cluster communication
+      - "7001:7001" # cluster communication (SSL)
+      - "9042:9042" # native protocol clients
+      - "9160:9160" # thrift clients
+    healthcheck:
+      #test: ["CMD", "cqlsh", "-u cassandra", "-p cassandra" ,"-e describe keyspaces"]
+      test: ["CMD", "cqlsh", "-e describe keyspaces"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+
+  server-app:
+    image: server:latest
+    container_name: server
+    environment:
+      - CASSANDRA_HOST=172.17.0.1
+      - ZENOH_HOST=0.0.0.0
+      - CERT_PATH /app/cert/rootCa.crt
+      - RUST_LOG=debug
+    depends_on:
+      cassandra:
+        condition: service_healthy
+    networks:
+      - mynetwork
+    ports:
+      - "7447:7447"
+
+networks:
+  mynetwork:
+     driver: bridge

@@ -1,0 +1,2 @@
+cargo:rerun-if-changed=./protos/data.proto
+cargo:rerun-if-changed=./protos
